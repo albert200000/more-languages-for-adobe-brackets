@@ -200,13 +200,17 @@ define(function (require, exports, module) {
     LanguageManager.defineLanguage("typescript", {
       name: 'TypeScript',
       mode: ['javascript', 'text/typescript'],
-      fileExtensions: ['ts']
+      fileExtensions: ['ts'],
+      blockComment: ["/*", "*/"],
+      lineComment: ["//"]
     });
 
     LanguageManager.defineLanguage("tsx", {
       name: 'TypeScript-JSX',
       mode: ['jsx', 'text/typescript-jsx'],
-      fileExtensions: ['tsx']
+      fileExtensions: ['tsx'],
+      blockComment: ["/*", "*/"],
+      lineComment: ["//"]
     });
 
     // Solidity highlighting support.
